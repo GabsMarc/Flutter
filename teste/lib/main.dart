@@ -62,6 +62,7 @@ class _PerguntaAppState extends State<PerguntaApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: Color.fromRGBO(86, 6, 162, 1),
         appBar: AppBar(
           title: const Text('Perguntas'),
           backgroundColor: Color.fromARGB(255, 153, 10, 255),

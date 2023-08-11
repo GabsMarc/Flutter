@@ -26,17 +26,27 @@ class Resultado extends StatelessWidget {
         Center(
           child: Text(
             fraseResultado,
-            style: TextStyle(fontSize: 25),
+            style: TextStyle(
+              fontSize: 30,
+              color: Colors.white,
+            ),
           ),
         ),
-        TextButton(
-          onPressed: quandoReiniciarQuestionario,
-          style: ButtonStyle(
-              foregroundColor:
-                  MaterialStateProperty.all(Color.fromARGB(255, 153, 10, 255))),
-          child: Text(
-            'Reiniciar?',
-            style: TextStyle(fontSize: 20),
+        Container(
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.all(Radius.circular(10))),
+          child: TextButton(
+            onPressed: quandoReiniciarQuestionario,
+            style: ButtonStyle(
+                foregroundColor: MaterialStateProperty.all(
+                    Color.fromARGB(255, 255, 255, 255))),
+            child: Text(
+              'Reiniciar?',
+              style: TextStyle(
+                fontSize: 20,
+                backgroundColor: Color.fromARGB(255, 235, 3, 220),
+              ),
+            ),
           ),
         )
       ],
